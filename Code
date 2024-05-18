@@ -1,0 +1,72 @@
+Dim SS%
+
+
+Private Sub Timer1_Timer()
+L1:    SS = SS + 1
+    NSECOND.Caption = SS
+    WSECOND.Caption = SS
+    ESECOND.Caption = SS
+    SSECOND.Caption = SS
+    If SS = 15 Then
+    SRED.BackColor = &HFF&
+    SGREEN.BackColor = &HFFFFFF
+    SYELLOW.BackColor = &HFFFFFF
+    NYELLOW.BackColor = &HFFFF&
+    NRED.BackColor = &HFFFFFF
+    NGREEN.BackColor = &HFFFFFF
+    WGREEN.BackColor = &HFF00&
+    WYELLOW.BackColor = &HFFFFFF
+    WRED.BackColor = &HFFFFFF
+    ERED.BackColor = &HFF&
+    EYELLOW.BackColor = &HFFFFFF
+    EGREEN.BackColor = &HFFFFFF
+    End If
+    
+    If SS = 30 Then
+    SRED.BackColor = &HFF&
+    SGREEN.BackColor = &HFFFFFF
+    SYELLOW.BackColor = &HFFFFFF
+    NYELLOW.BackColor = &HFFFFFF
+    NRED.BackColor = &HFFFFFF
+    NGREEN.BackColor = &HFF00&
+    WGREEN.BackColor = &HFFFFFF
+    WYELLOW.BackColor = &HFFFFFF
+    WRED.BackColor = &HFF&
+    ERED.BackColor = &HFFFFFF
+    EYELLOW.BackColor = &HFFFF&
+    EGREEN.BackColor = &HFFFFFF
+    End If
+    
+    If SS = 45 Then
+    SRED.BackColor = &HFFFFFF
+    SGREEN.BackColor = &HFFFFFF
+    SYELLOW.BackColor = &HFFFF&
+    NYELLOW.BackColor = &HFFFFFF
+    NRED.BackColor = &HFF&
+    NGREEN.BackColor = &HFFFFFF
+    WGREEN.BackColor = &HFFFFFF
+    WYELLOW.BackColor = &HFFFFFF
+    WRED.BackColor = &HFF&
+    ERED.BackColor = &HFFFFFF
+    EYELLOW.BackColor = &HFFFFFF
+    EGREEN.BackColor = &HFF00&
+    End If
+             
+    If SS = 60 Then
+                SRED.BackColor = &HFFFFFF
+                SGREEN.BackColor = &HFF00&
+                SYELLOW.BackColor = &HFFFFFF
+                NYELLOW.BackColor = &HFFFFFF
+                NRED.BackColor = &HFF&
+                NGREEN.BackColor = &HFFFFFF
+                WGREEN.BackColor = &HFFFFFF
+                WYELLOW.BackColor = &HFFFF&
+                WRED.BackColor = &HFFFFFF
+                ERED.BackColor = &HFF&
+                EYELLOW.BackColor = &HFFFFFF
+                EGREEN.BackColor = &HFFFFFF
+                SS = 0
+            GoTo L1
+    End If
+End Sub
+
